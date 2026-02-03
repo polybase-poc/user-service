@@ -1,0 +1,10 @@
+# application.yml
+# Implement circuit breaker pattern with Resilience4j
+# Generated: 2026-04-09
+
+apiVersion: v1
+kind: Config
+metadata:
+  name: application
+spec:
+  # TODO: Add configuration
