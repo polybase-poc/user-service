@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "projectName": "user-service",
+  "organization": "polybase-poc",
+  "team": "backend",
+  "rules": [
+    ".claude/rules/security.md",
+    ".claude/rules/code-quality.md",
+    ".claude/rules/git-workflow.md"
+  ],
+  "statusline": {
+    "enabled": true,
+    "format": "[user-service] {branch} {status}"
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "org": "polybase-poc",
+      "repo": "user-service"
+    }
+  }
+}
