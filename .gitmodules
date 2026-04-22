@@ -1,0 +1,8 @@
+[submodule ".claude/org-agents"]
+	path = .claude/org-agents
+	url = https://github.com/my-platform-org/agentic-development-framework.git
+	sparse = .claude/agents
+[submodule ".claude/org-skills"]
+	path = .claude/org-skills
+	url = https://github.com/my-platform-org/agentic-development-framework.git
+	sparse = .claude/skills

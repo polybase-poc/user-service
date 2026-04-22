@@ -28,3 +28,6 @@ build/
 tmp/
 temp/
 *.tmp
+
+# Claude Code org-managed agents (handled by git submodules)
+# Don't ignore the submodule itself, just track the commit reference
