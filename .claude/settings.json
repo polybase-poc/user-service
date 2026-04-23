@@ -1,22 +1,26 @@
 {
   "version": "1.0",
   "projectName": "user-service",
-  "organization": "polybase-poc",
-  "team": "backend",
-  "rules": [
-    ".claude/rules/security.md",
-    ".claude/rules/code-quality.md",
-    ".claude/rules/git-workflow.md"
-  ],
-  "statusline": {
+  "organization": "polybase",
+  "agents": {
     "enabled": true,
-    "format": "[user-service] {branch} {status}"
+    "autoDiscover": true,
+    "paths": [
+      ".claude/org-agents/.claude/agents",
+      ".claude/agents"
+    ]
   },
-  "integrations": {
-    "github": {
-      "enabled": true,
-      "org": "polybase-poc",
-      "repo": "user-service"
-    }
+  "skills": {
+    "enabled": true,
+    "autoDiscover": true,
+    "paths": [
+      ".claude/org-skills/.claude/skills",
+      ".claude/skills"
+    ]
+  },
+  "_comments": {
+    "org-agents": "Org-managed agents (read-only submodule from my-platform-org/agentic-development-framework)",
+    "agents": "Local agent overrides (team-writable, shadows org agents by name)",
+    "update": "To update org agents: git submodule update --remote .claude/org-agents .claude/org-skills"
   }
 }
